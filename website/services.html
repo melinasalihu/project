@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BizFinance - Our Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <h1 class="logo">BizFinance</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Our Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <h2>Our Services</h2>
+  <ul class="services-list">
+    <li><strong>Financial Analysis:</strong> In-depth reviews of your company’s financial data to uncover growth opportunities and risks.</li>
+    <li><strong>Business Consulting:</strong> Customized strategies to improve efficiency, profitability, and market positioning.</li>
+    <li><strong>Accounting & Taxation:</strong> Accurate bookkeeping, tax planning, and compliance services.</li>
+    <li><strong>Market Research & Statistics:</strong> Detailed analysis of market trends to help you stay ahead of the competition.</li>
+    <li><strong>Financial Planning:</strong> Long-term planning to secure your company’s financial future.</li>
+  </ul>
+</main>
+
+<footer>
+  <p>&copy; 2025 BizFinance. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+ </html> -->
+
+
+
+  <!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services - FinancePro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html" class="active">Our Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="services-main">
+    <h1>Our Services</h1>
+    <p class="intro">Click on a service to learn more about how we can help you achieve it and to contact us directly about it.</p>
+
+    <ul class="services-list">
+      <li class="service-item" onclick="showDetails('service1')">
+        <h2>Financial Analysis</h2>
+      </li>
+      <li class="service-item" onclick="showDetails('service2')">
+        <h2>Business Consulting</h2>
+      </li>
+      <li class="service-item" onclick="showDetails('service3')">
+        <h2>Risk Management</h2>
+      </li>
+      <li class="service-item" onclick="showDetails('service4')">
+        <h2>Investment Planning</h2>
+      </li>
+      <li class="service-item" onclick="showDetails('service5')">
+        <h2>Tax Advisory</h2>
+      </li>
+    </ul>
+
+ 
+    <section id="service1" class="service-details hidden">
+      <h3>Financial Analysis</h3>
+      <p>
+        We provide deep insights into your company's financial health by analyzing financial statements, cash flows, and key performance metrics. 
+        <br><br>
+        <strong>How to achieve:</strong> Regular reporting, benchmarking against industry standards, and customized dashboards for monitoring progress.
+      </p>
+      <a href="contact.html?service=financial-analysis" class="btn-contact">Contact us about Financial Analysis</a>
+      <button class="btn-close" onclick="closeDetails('service1')">Close</button>
+    </section>
+
+    <section id="service2" class="service-details hidden">
+      <h3>Business Consulting</h3>
+      <p>
+        Our experts guide you through strategic decisions, organizational improvements, and operational efficiencies.
+        <br><br>
+        <strong>How to achieve:</strong> Workshops, market research, SWOT analysis, and continuous improvement frameworks.
+      </p>
+      <a href="contact.html?service=business-consulting" class="btn-contact">Contact us about Business Consulting</a>
+      <button class="btn-close" onclick="closeDetails('service2')">Close</button>
+    </section>
+
+    <section id="service3" class="service-details hidden">
+      <h3>Risk Management</h3>
+      <p>
+        Identify and mitigate financial and operational risks to protect your assets and business continuity.
+        <br><br>
+        <strong>How to achieve:</strong> Risk assessments, insurance reviews, compliance audits, and crisis planning.
+      </p>
+      <a href="contact.html?service=risk-management" class="btn-contact">Contact us about Risk Management</a>
+      <button class="btn-close" onclick="closeDetails('service3')">Close</button>
+    </section>
+
+    <section id="service4" class="service-details hidden">
+      <h3>Investment Planning</h3>
+      <p>
+        Develop personalized investment strategies that align with your financial goals and risk tolerance.
+        <br><br>
+        <strong>How to achieve:</strong> Portfolio analysis, asset allocation, tax-efficient strategies, and regular reviews.
+      </p>
+      <a href="contact.html?service=investment-planning" class="btn-contact">Contact us about Investment Planning</a>
+      <button class="btn-close" onclick="closeDetails('service4')">Close</button>
+    </section>
+
+    <section id="service5" class="service-details hidden">
+      <h3>Tax Advisory</h3>
+      <p>
+        Maximize your tax savings and ensure compliance with the latest tax laws.
+        <br><br>
+        <strong>How to achieve:</strong> Tax planning, filing assistance, deductions identification, and audit support.
+      </p>
+      <a href="contact.html?service=tax-advisory" class="btn-contact">Contact us about Tax Advisory</a>
+      <button class="btn-close" onclick="closeDetails('service5')">Close</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BizFinance. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+ </html> 
+
+
+
+

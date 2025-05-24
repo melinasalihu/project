@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - FinancePro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-main">
+
+    <section class="who-we-are">
+      <h1>Who We Are</h1>
+      <div class="who-box">
+        <p>
+          At <strong>BizFinance</strong>, we pride ourselves on delivering world-class financial and business consulting services. 
+          Our team of experts combines decades of experience with innovative strategies to empower your business growth, manage risks, and optimize profitability. 
+          We believe in building lasting relationships through transparency, commitment, and excellence.
+        </p>
+        <p>
+          Whether you are a startup or an established corporation, our customized solutions and insights ensure that your financial decisions are informed and impactful.
+          Join hundreds of satisfied clients who trust us to steer their financial future.
+        </p>
+      </div>
+    </section>
+
+    <section class="image-section">
+      <div class="image-item" onclick="showText('text1')">
+        <img src="images/meeting.jpg" alt="Expert Team" />
+        <p>Expert Team</p>
+      </div>
+
+      <div class="image-item" onclick="showText('text2')">
+        <img src="images/business-strategy.jpg" alt="Strategic Planning" />
+        <p>Strategic Planning</p>
+      </div>
+    </section>
+
+    <section id="text1" class="info-text hidden">
+      <h2>Our Expert Team</h2>
+      <p>
+        Our team comprises seasoned financial analysts, accountants, and business consultants dedicated to providing you with tailored advice and actionable insights.
+        They work closely with you to understand your unique challenges and opportunities.
+      </p>
+      <button onclick="closeText('text1')">Close</button>
+    </section>
+
+    <section id="text2" class="info-text hidden">
+      <h2>Strategic Planning</h2>
+      <p>
+        We develop comprehensive business strategies that focus on sustainable growth, market expansion, and competitive advantage.
+        Our approach combines data-driven analysis with creative problem solving.
+      </p>
+      <button onclick="closeText('text2')">Close</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FinancePro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
