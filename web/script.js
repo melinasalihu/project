@@ -1,5 +1,5 @@
 
-// window.addEventListener("load", () => {
+
   const loadingScreen = document.getElementById("loading-screen")
   setTimeout(() => {
     loadingScreen.style.opacity = "0"
@@ -524,7 +524,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Add CSS for video modal
+
 const videoModalStyles = `
   .video-modal {
     position: fixed;
