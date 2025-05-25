@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
     <title>BizFinance - Expert Financial Analysis & Business Consulting</title>
     <meta name="description" content="Empowering businesses to make smarter financial decisions with data-driven insights and personalized consulting services.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatpod.css"
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -280,7 +281,29 @@
         </div>
     </footer>
 
+    <div class="chatpod-container">
+  <button id="chat-toggle" class="chat-toggle">💬 Chat</button>
+
+  <div class="chatbox hidden" id="chatbox">
+    <div class="chatbox-header">
+      <span>BizFinance Assistant</span>
+      <button id="close-chat" class="close-chat">×</button>
+    </div>
+    <div class="chatbox-messages" id="chat-messages">
+      <div class="message bot">Hello! How can I help you today?</div>
+    </div>
+    <form id="chat-form" class="chatbox-input">
+      <input type="text" id="chat-input" placeholder="Type your message..." required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+
 
     <script src="index.js"></script>
+    <script src="chatpod.js"></script>
 </body>
  </html> 
+
+    

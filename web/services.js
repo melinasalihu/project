@@ -14,21 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.toggle("scrolled", window.scrollY > 50);
     });
 
-    // Service Filtering
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const serviceCards = document.querySelectorAll(".service-card");
-    const filterContainer = document.createElement("div");
-    filterContainer.classList.add("filter-container");
-    filterContainer.innerHTML = `
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="analysis">Analysis</button>
-        <button class="filter-btn" data-filter="consulting">Consulting</button>
-        <button class="filter-btn" data-filter="risk">Risk</button>
-        <button class="filter-btn" data-filter="investment">Investment</button>
-        <button class="filter-btn" data-filter="tax">Tax</button>
-        <button class="filter-btn" data-filter="training">Training</button>
+     //Service Filtering
+     const filterButtons = document.querySelectorAll(".filter-btn");
+     const serviceCards = document.querySelectorAll(".service-card");
+     const filterContainer = document.createElement("div");
+     filterContainer.classList.add("filter-container");
+    lterContainer.innerHTML = `
+    //  <button class="filter-btn active" data-filter="all">All</button>
+         <button class="filter-btn" data-filter="analysis">Analysis</button>
+         <button class="filter-btn" data-filter="consulting">Consulting</button>
+         <button class="filter-btn" data-filter="risk">Risk</button>
+         <button class="filter-btn" data-filter="investment">Investment</button>
+          <button class="filter-btn" data-filter="tax">Tax</button>
+      <button class="filter-btn" data-filter="training">Training</button>
     `;
-    document.querySelector(".services-grid").prepend(filterContainer);
+     document.querySelector(".services-grid").prepend(filterContainer);
 
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
@@ -121,21 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     processSteps.forEach(step => processObserver.observe(step));
 
-    // Lazy Loading Images (Fallback for older browsers)
-    const images = document.querySelectorAll("img[data-src]");
-    const imageObserver = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.getAttribute("data-src");
-                    img.removeAttribute("data-src");
-                    observer.unobserve(img);
-                }
-            });
-        },
-        { threshold: 0.1 }
-    );
+  
 
     images.forEach(img => imageObserver.observe(img));
 
@@ -160,3 +146,55 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+// Toggle buttons for pricing
+const monthlyBtn = document.querySelector('#monthly-btn');
+const yearlyBtn = document.querySelector('#yearly-btn');
+const prices = document.querySelectorAll('.price'); // sigurohu që t’i japësh class="price" div-it të çmimit
+
+monthlyBtn.addEventListener('click', () => {
+    monthlyBtn.classList.add('active');
+    yearlyBtn.classList.remove('active');
+    prices.forEach(price => {
+        const monthly = price.getAttribute('data-monthly');
+        price.textContent = monthly;
+    });
+});
+
+// yearlyBtn.addEventListener('click', () => {
+//     yearlyBtn.classList.add('active');
+//     monthlyBtn.classList.remove('active');
+//     prices.forEach(price => {
+//         const yearly = price.getAttribute('data-yearly');
+//         price.textContent = yearly;
+//     });
+// });
+
+
+// const searchInput = document.querySelector('#search-input');
+// const serviceCards = document.querySelectorAll('.service-card'); // Sigurohu që secila kartë e shërbimit ka class="service-card"
+
+// searchInput.addEventListener('input', () => {
+//     const query = searchInput.value.toLowerCase();
+//     serviceCards.forEach(card => {
+//         const text = card.textContent.toLowerCase();
+//         if (text.includes(query)) {
+//             card.style.display = 'block';
+//         } else {
+//             card.style.display = 'none';
+//         }
+//     }) });
+
+
+
+
+
+
+
+
+
+
+
+
