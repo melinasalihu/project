@@ -1,5 +1,5 @@
 
-* {
+ * { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -690,7 +690,7 @@ body {
   color: #94a3b8;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .top-bar-content {
     flex-direction: column;
@@ -2407,5 +2407,10 @@ body {
   .faq-item.active .faq-answer {
     padding: 0 20px 20px;
   }
-}
+ } 
+
+
+
+
+
 
